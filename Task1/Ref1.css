@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+header{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+#menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#home{
+   background-color: #59405C;
+   background-image: linear-gradient(red, yellow)
+}
+
+#about{
+     background-color: #ED6663;
+     background-image: linear-gradient(yellow, green)
+}
+
+#product{
+     background-color: #B52B65;
+     background-image: linear-gradient(green, blue)
+}
+
+#contact{
+     background-color: #3C2C3E;
+     background-image: linear-gradient(blue, purple)
+}
+
+#sign-up{
+    background-color: #ED6663;
+    background-image: linear-gradient(purple, red)
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+p{
+    position: relative;
+    top: 60%;
+    padding: 10px;
+    color: lavenderblush;
+    text-align: center;
+}
+
+
+.navbar {
+    background: #131212;
+    height: 100px;
+    justify-content: right;
+    align-items: right;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 220px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+ color: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 125px;
+ text-decoration: none;
+ height: 100%;
+ transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background: #a85fd8;
+    color: #fff;
+}
