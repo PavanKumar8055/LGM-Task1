@@ -4,64 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <title>One Page Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="Ref1.css">
+    
 </head>
 
 <body>
 
     <section id="home">
         <header>
-            <nav class="navbar">
-                <div class="navbar__container">
-                    <a href="#home" id="navbar__logo"><img src="Images if needed/Logo.png" alt=""></a>
-                    <div class="navbar__toggle" id="mobile-menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <ul class="navbar__menu">
-                        <li class="navbar__item">
-                            <a href="#home" class="navbar__links" id="home-page">HOME</a>
+            <nav class="navbar navbar-expand-lg navbar-dark navigation-bar ">
+                <a href="#home" id="navbar__logo" class="logo" ><img src="Images if needed/Logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link" id="home-page">Home</a>
                         </li>
-                        <li class="navbar__item">
-                          <a href="#about" class="navbar__links" id="about-page">ABOUT</a>
-                      </li>
-                      <li class="navbar__item">
-                          <a href="#product" class="navbar__links" id="product-page">Product</a>
-                      </li>
-                      <li class="navbar__item">
-                        <a href="#contact" class="navbar__links" id="contact-page">Contact</a>
-                      </li> 
-                      <li class="navbar__btn">
-                          <a href="#sign-up" class="button" id="pricing">SIGN UP</a>
-                      </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" id="about-page">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#product" class="nav-link" id="product-page">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" id="contact-page">Contact</a>
+                        </li> 
+                        <li class="navbar__btn nav-item ">
+                            <a href="#contact" class="nav-link " id="pricing">SIGN UP</a>
+                        </li>
                     </ul>
                 </div>
-            </nav> 
+              </nav>
         </header>
-         <h1>CFF - Courses For Fun</h1>
-         <p>CFF is a online platform that provide the courses which are really  helpful in building your profile and you feel fun in learning these courses. These are not only helps your carrer development but also personality development</p>
+
+        <div class="home-para" >
+            <h1 class="title" >CFF - Courses For Fun</h1>
+            <p>CFF is a online platform that provide the courses which are really  helpful in building your profile and you feel fun in learning these courses. These are not only helps your carrer development but also personality development</p>
+        </div>
     </section>
-    <section id="about"><h1>This Is About</h1>
-        <p>CFF is a online platform that provide the courses which are really  helpful in building your profile and you feel fun in learning these courses. These are not only helps your carrer development but also personality development?</p>
+
+
+    <section id="about">
+        <div class="para" >
+            <h1>This Is About</h1>
+            <p>CFF is a online platform that provide the courses which are really  helpful in building your profile and you feel fun in learning these courses. These are not only helps your carrer development but also personality development?</p>
+        </div>
     </section>
-    <section id="product"><h1>Products available</h1>
-        <a href="#product" >
+
+
+    <section id="product">
+        <div class="para">
+            <h1>Products available</h1>
             <p>Learn-Flutter-And-Dart-To-Create-Android-And-IOS-Apps</p>
             <p>The Complete Dart Language Guide For Google Flutter</p>
             <p>Tableau Desktop Specialist Certification Exam Prep 2022</p>
-            <div class="post-format"></div>
-        </a>
+        </div>
     </section>
-    <section id="contact"><h1>This Is Contact</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse, quod tempora eos facere sapiente reprehenderit ipsam vel aperiam tenetur. Magni accusamus laborum voluptates rerum soluta asperiores est optio doloribus!</p>
-    </section>
-    <section id="sign-up"><h1>Sign-up here</h1>
-        <p>Email: <input type="email" name="email" id="email"></p>
-        <p>Enter Password: <input type="password" name="pass" id="pass"></p>
-        <p class="sign__btn">
-            <a href="#sign-up" class="button" id="pricing">SIGN UP</a>
-        </p>
+
+
+    <section id="contact">
+        <div class="contact-para" >
+            <h1>This is Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse, quod tempora eos facere sapiente reprehenderit ipsam vel aperiam tenetur. Magni accusamus laborum voluptates rerum soluta asperiores est optio doloribus!</p>
+            <h2>Sign-up here</h2>
+            <p>Email: <input type="email" name="email" id="email" class="email-input" ></p>
+            <p>Enter Password: <input type="password" name="pass" id="pass"></p>
+            <p class="sign__btn">
+                <a href="#sign-up" class="button" id="pricing">SIGN UP</a>
+            </p>
+
+        </div>
     </section>
 
 </body>
